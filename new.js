@@ -185,6 +185,6 @@ document
       alert("Resepti tallennettu");
 
 window.location.replace(
-  "./index.html"
+  "./index.htm"
 );
     });
