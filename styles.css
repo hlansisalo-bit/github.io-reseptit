@@ -1,5 +1,19 @@
 /* ---------- PERUSASETUKSET ---------- */
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Reseptit</title>
+
+  <link rel="stylesheet"
+        href="styles.css">
+
+</head>
+
 * {
 
   box-sizing: border-box;
@@ -17,7 +31,6 @@ html {
 body {
 
   margin: 0;
-  padding: 0;
 
   font-family:
     system-ui,
@@ -31,8 +44,6 @@ body {
   font-size: 18px;
 
   line-height: 1.5;
-
-  overflow-x: hidden;
 
 }
 
@@ -129,7 +140,8 @@ button,
 select {
 
   font-size: 16px;
-
+ width: 100%;
+  max-width: 100%;
 }
 
 
