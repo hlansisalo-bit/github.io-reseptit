@@ -1,5 +1,16 @@
+/* ---------- PERUSASETUKSET ---------- */
+
 * {
+
   box-sizing: border-box;
+
+}
+
+
+html {
+
+  -webkit-text-size-adjust: 100%;
+
 }
 
 
@@ -14,9 +25,14 @@ body {
     sans-serif;
 
   background: #f4f4f4;
+
   color: #222;
 
+  font-size: 18px;
+
   line-height: 1.5;
+
+  overflow-x: hidden;
 
 }
 
@@ -25,20 +41,23 @@ body {
 
 main {
 
-  max-width: 900px;
+  max-width: 760px;
+
   margin: 0 auto;
 
   padding:
-    16px 14px 40px;
+    14px 12px 40px;
 
 }
 
 
 h1 {
 
-  margin-top: 0;
+  margin:
+    0 0 16px;
 
   font-size: 1.8rem;
+
   line-height: 1.2;
 
 }
@@ -54,16 +73,25 @@ h2 {
 }
 
 
+section {
+
+  margin-top: 20px;
+
+}
+
+
 /* ---------- YLÄPALKKI ---------- */
 
 .topbar {
 
   position: sticky;
+
   top: 0;
 
   background: white;
 
-  padding: 12px 14px;
+  padding:
+    12px;
 
   border-bottom:
     1px solid #ddd;
@@ -80,12 +108,36 @@ h2 {
 }
 
 
+/* ---------- HAKU JA FILTTERIT ---------- */
+
+.filters {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+}
+
+
 /* ---------- INPUTIT ---------- */
+
+input[type="text"],
+textarea,
+button,
+select {
+
+  font-size: 16px;
+
+}
+
 
 input[type="text"],
 textarea {
 
   width: 100%;
+  max-width: 100%;
 
   padding: 12px;
 
@@ -93,8 +145,6 @@ textarea {
     1px solid #ccc;
 
   border-radius: 10px;
-
-  font-size: 16px;
 
   background: white;
 
@@ -110,12 +160,55 @@ textarea {
 }
 
 
+/* ---------- CHECKBOXIT ---------- */
+
+.checkbox-group {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-top: 10px;
+
+}
+
+
+.checkbox-group label {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  background: white;
+
+  padding:
+    10px 12px;
+
+  border-radius: 10px;
+
+}
+
+
+input[type="checkbox"] {
+
+  width: 20px;
+  height: 20px;
+
+}
+
+
 /* ---------- BUTTONIT ---------- */
 
 button,
 .button {
 
   display: inline-block;
+
+  min-height: 48px;
 
   padding:
     12px 18px;
@@ -125,11 +218,10 @@ button,
   border-radius: 10px;
 
   background: #222;
+
   color: white;
 
   text-decoration: none;
-
-  font-size: 16px;
 
   cursor: pointer;
 
@@ -149,6 +241,7 @@ button:active,
 a {
 
   color: inherit;
+
   text-decoration: none;
 
 }
@@ -159,6 +252,7 @@ a {
 .recipe-list {
 
   display: flex;
+
   flex-direction: column;
 
   gap: 10px;
@@ -174,7 +268,8 @@ a {
 
   border-radius: 12px;
 
-  padding: 14px 16px;
+  padding:
+    14px 16px;
 
   box-shadow:
     0 1px 3px rgba(0,0,0,0.08);
@@ -187,6 +282,7 @@ a {
   margin: 0;
 
   font-size: 1.05rem;
+
   font-weight: 600;
 
 }
@@ -219,6 +315,8 @@ a {
 
   white-space: pre-wrap;
 
+  word-break: break-word;
+
 }
 
 
@@ -227,6 +325,7 @@ a {
 .tags {
 
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 8px;
@@ -250,41 +349,12 @@ a {
 }
 
 
-/* ---------- CHECKBOX RYHMÄT ---------- */
-
-.checkbox-group {
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 8px;
-
-  margin-top: 10px;
-
-}
-
-
-.checkbox-group label {
-
-  display: flex;
-  align-items: center;
-
-  gap: 10px;
-
-  background: white;
-
-  padding: 10px 12px;
-
-  border-radius: 10px;
-
-}
-
-
 /* ---------- FORM ---------- */
 
 .recipe-form {
 
   display: flex;
+
   flex-direction: column;
 
   gap: 22px;
@@ -295,6 +365,7 @@ a {
 .recipe-form label {
 
   display: flex;
+
   flex-direction: column;
 
   gap: 8px;
@@ -302,14 +373,20 @@ a {
 }
 
 
-/* ---------- HAKUALUE ---------- */
+/* ---------- STICKY TOOLBAR ---------- */
 
-.filters {
+.sticky-toolbar {
 
-  display: flex;
-  flex-direction: column;
+  position: sticky;
 
-  gap: 16px;
+  top: 0;
+
+  background: #f4f4f4;
+
+  padding:
+    10px 0 14px;
+
+  z-index: 20;
 
 }
 
