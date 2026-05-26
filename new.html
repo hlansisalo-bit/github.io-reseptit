@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+  <title>Uusi resepti</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <main class="recipe-form">
+
+    <h1>Uusi resepti</h1>
+
+    <form id="recipe-form">
+
+      <label>
+        Nimi
+        <input type="text" id="Nimi">
+      </label>
+
+
+      <label>
+        Ainekset
+        <textarea id="Ainekset"
+                  rows="10"></textarea>
+      </label>
+
+
+      <label>
+        Valmistusohje
+        <textarea id="Valmistusohje"
+                  rows="15"></textarea>
+      </label>
+
+
+      <label>
+        Huomio
+        <textarea id="Huomio"
+                  rows="5"></textarea>
+      </label>
+
+
+      <section>
+
+        <h2>Ominaisuus</h2>
+
+        <div class="checkbox-group"
+              id="OminaisuusGroup">
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <h2>Luokka</h2>
+
+        <div class="checkbox-group"
+             id="LuokkaGroup">
+
+        </div>
+
+      </section>
+
+
+      <button type="submit">
+        Tallenna
+      </button>
+
+    </form>
+
+  </main>
+
+  <script type="module"
+          src="new.js">
+  </script>
+
+</body>
+</html>

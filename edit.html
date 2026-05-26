@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+  <title>Muokkaa</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <main class="recipe-form">
+
+    <h1>Muokkaa</h1>
+    
+
+    <form id="recipe-form">
+
+<button type="submit">
+        Tallenna muutokset
+      </button>
+<button id="delete-button">
+  Poista
+</button>
+
+      <label>
+        Nimi
+        <input type="text" id="Nimi">
+      </label>
+
+
+      <label>
+        Ainekset
+        <textarea id="Ainekset"
+                  rows="10"></textarea>
+      </label>
+
+
+      <label>
+        Valmistusohje
+        <textarea id="Valmistusohje"
+                  rows="15"></textarea>
+      </label>
+
+
+      <label>
+        Huomio
+        <textarea id="Huomio"
+                  rows="5"></textarea>
+      </label>
+
+
+      <section>
+
+        <h2>Ominaisuus</h2>
+
+        <div class="checkbox-group"
+              id="OminaisuusGroup">
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <h2>Luokka</h2>
+
+        <div class="checkbox-group"
+             id="LuokkaGroup">
+
+        </div>
+
+      </section>
+
+
+      
+
+    </form>
+
+  </main>
+
+  <script type="module"
+          src="edit.js">
+  </script>
+
+</body>
+</html>
