@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>AI-resepti</title>
+
+  <link rel="stylesheet"
+        href="styles.css">
+
+</head>
+
+<body>
+
+<main>
+
+  <h1>AI-resepti</h1>
+
+  <p>
+
+    Kuvaile haluamasi resepti mahdollisimman tarkasti.
+
+  </p>
+
+  <textarea id="description"
+            rows="10"></textarea>
+
+  <br><br>
+
+  <button id="generate-button">
+
+    Luo resepti
+
+  </button>
+
+  <a href="index.htm" class="button">
+  Kaikki
+</a>
+
+  <div id="loading">
+
+  <div class="spinner"></div>
+
+  <p>Reseptiä luodaan...</p>
+
+</div>
+
+</main>
+
+<script type="module"
+        src="ai-recipe.js"></script>
+
+</body>
+
+</html>
