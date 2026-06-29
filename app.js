@@ -165,7 +165,7 @@ window.addEventListener("pageshow", async function () {
 
   await loadRecipes();
 
- // filterRecipes();
+ filterRecipes();
 
 });
 
