@@ -116,6 +116,10 @@ async function loadRecipe() {
             .replaceAll(";", "<br>")}
         </div>
         <div>
+          ${recipe.Arvio
+            .replaceAll(";", "<br>")}
+        </div>
+        <div>
           ${recipe.Valmistuspvt}
         </div>
 
