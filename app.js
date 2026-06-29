@@ -80,7 +80,9 @@ recipes
       ${recipe.Valmistusohje || ""}
       ${recipe.Suosikki || ""}
       ${recipe.Tyyppi || ""}
+      ${recipe.Arvio || ""}
       ${recipe.Valmistuspvt || ""}
+      ${(recipe.Valmistuspvt?.length || 0) < 30 ? "" : "tehty paljon" || ""}
     `.toLowerCase();
 
     card.dataset.search = searchText;
