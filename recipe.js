@@ -104,23 +104,19 @@ async function loadRecipe() {
         <h2>Luokittelu</h2>
 
         <div>
-          ${recipe.Luokka
-            .replaceAll(";", "<br>")}
+          ${recipe.Luokka ?? ""}
         </div>
         <div>
-          ${recipe.Ominaisuus
-            .replaceAll(";", "<br>")}
+          ${recipe.Ominaisuus ?? ""}
         </div>
         <div>
-          ${recipe.Tyyppi
-            .replaceAll(";", "<br>")}
+          ${recipe.Tyyppi ?? ""}
+        </div>
+         <div>
+          ${recipe.Arvio ?? ""}
         </div>
         <div>
-          ${recipe.Arvio
-            .replaceAll(";", "<br>")}
-        </div>
-        <div>
-          ${recipe.Valmistuspvt}
+          ${recipe.Valmistuspvt ?? ""}
         </div>
 
       </section>
